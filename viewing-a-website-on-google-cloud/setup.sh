@@ -15,6 +15,7 @@
 # limitations under the License.
 
 printf "Checking for required npm version...\n"
+nvm install 16.17.0 > /dev/null 2>&1
 npm install -g npm > /dev/null 2>&1
 printf "Completed.\n\n"
 
