@@ -15,7 +15,9 @@
 # limitations under the License.
 
 printf "Checking for required npm version...\n"
-npm install -g npm > /dev/null 2>&1
+sudo apt-get install npm -y > /dev/null 2>&1
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash > /dev/null 2>&1
+sudo npm install -g npm > /dev/null 2>&1
 printf "Completed.\n\n"
 
 set -eEo pipefail
